@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="COFFEE MINUTE" />
+        <meta name="author" content="PMCCC" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+        </style>
+        
+        <title>COFFEE MINUTE</title>
+    </head>
+    <body>
+        <header id="header">
+            <h1>COFFEE MINUTE</h1>
+        </header>
+        <nav id="navbar">
+                <ul>
+                    <li><a href=#>HOME</a></li>
+                    <li><a href="#sect-coffee">COFFEE</a></li>
+                    <li><a href="#contact-form">CONTACT</a></li>
+                </ul>
+        </nav>
+            <button type="button" id="btn-dropdown" class="btn-pressdown">&#x25B6; Press Me</button>   
+        <div class="main-flex-container">
+            <aside id="aside">
+                <div class="aside-flex-container">
+                     <!-- AVATAR & SELF-INTRODUCTION ABOUT THE LOVE FOR COFFEE -->
+                    <img src="img/avatar.png" alt="avatar">    
+                    <p>
+                        Coffee fuels me.<br>Coffee energizes me.<br>Coffee stimulates me.
+                    </p>
+                    <p>
+                        Coffee helps me be a functional human being and keeps me productive.
+                    </p>
+                    <p>
+                        Coffee is love.<br>Coffee is life.
+                    </p>
+                </div>
+            </aside>
+            <section id="section">
+                <div id="sect-welcome">
+                    <!-- WELCOME SECTION -->
+                    <h2>Hi, Generous!</h2>
+                    <h3>Thank you for taking the time to ping me.</h3>
+                    <h3>Your support is highly appreciated.</h3>
+                </div>
+                <div id="sect-coffee">
+                    <!-- COFFEE LIST WITH PHOTO -->
+                    <!-- COFFEE DONATION -->
+                    <h2>REFILL A CUP OF COFFEE BY DONATING</h2>
+                    <div class="flexwrap-coffeelist">
+                        <div class="flex-coffee-img">
+                            <img src="img/greattaste_choco_twinpack.png">
+                            <div class="flex-coffee-details">PHP20.00<br>Twin Pack</div>
+                            <button type="button" class="btn-refill">REFILL NOW</button>
+                        </div>
+                        <div class="flex-coffee-img">
+                            <img src="img/greattaste_choco_singlebundle.png">
+                            <div class="flex-coffee-details">PHP80.00<br>Single Bundle</div>
+                            <button type="button" class="btn-refill">REFILL NOW</button>
+                        </div>
+                        <div class="flex-coffee-img">
+                            <img src="img/greattaste_choco_twinpackbundle.png">
+                            <div class="flex-coffee-details">PHP160.00<br>Twin Pack Bundle</div>
+                            <button type="button" class="btn-refill">REFILL NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-refill-container">
+                    <div class="modal-refill-details">
+                        <span class="modal-close">&times;</span>
+                        <h2>THANK YOU!</h2>
+                        <p>GCASH: 09276465870</p>
+                        <p>INITIALS: PMCCC</p>
+                        <h4>+1 GOOD DEED</h4>
+                    </div>
+                </div>
+                <div id="sect-contact">
+                    <!-- CONTACT -->
+                    <h2>FOR ANY INQUIRY OR FEEDBACK</h2>
+                    <div class="flex-contact-container">
+                    <form id="contact-form" action="https://formsubmit.co/cc9ffa7d56c96996366e95c9f9c0dafc" method="POST">
+                        <div>
+                            <div class="form-label">Email:</div>
+                            <input name="email" type="email" class="form-control" required />
+                        </div>
+                        <div>
+                            <div class="form-label">Subject:</div>
+                            <input name="subject" class="form-control" required />
+                        </div>
+                        <div>
+                            <div class="form-label">Message:</div>
+                            <textarea name="message" class="form-control" rows="8" placeholder="Please leave a message here. . ." required></textarea>
+                            <input type="hidden" name="_next" value="https://pmccc-profile.github.io/ping-me?sent=true">
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <p>Copyright 2025. PMCCC.</p>
+        </footer>
+        
+        <script src="script.js" defer></script>
+    </body>
+</html>
