@@ -314,6 +314,9 @@ body{
         margin: 0;
         max-width: 100%;
     }
+    #navbar{
+        padding: 15px 5px 15px 5px;
+    }
     #navbar li a{
         font-size: 20px;
     }
