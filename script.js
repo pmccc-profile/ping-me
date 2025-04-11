@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded",function(){
 });
 
 //Click event
-buttonDropdown.addEventListener("click", function () {
+buttonDropdown.addEventListener("click", function (event) {
     
     //Check buttonDropdown status
     if(buttonDropdown.classList.contains("btn-pressdown")){
@@ -69,13 +69,13 @@ buttonDropdown.addEventListener("click", function () {
 //Loop through each button
 buttonRefill.forEach(function(btnRefill){
     //Click event
-    btnRefill.addEventListener("click", function (){   
+    btnRefill.addEventListener("click", function (event){   
         modalRefillContainer.style.display = "block";                           
     });
 });
 
 //Click event
-spanClose.addEventListener("click", function (){   
+spanClose.addEventListener("click", function (event){   
     modalRefillContainer.style.display = "none";                           
 });
 
