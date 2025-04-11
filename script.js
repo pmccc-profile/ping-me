@@ -26,7 +26,12 @@ window.addEventListener("resize",function(){
         buttonDropdown.classList.remove("btn-pressup");
         buttonDropdown.innerHTML = "&#x25B6; Press Me";
     }else{
-        aside.style.display = "none"; 
+        //aside.style.display = "none"; 
+        if(buttonDropdown.classList.contains("btn-pressup")){
+            aside.style.display = "block";
+        }else{
+            aside.style.display = "none"; 
+        }
     }
 });
 
