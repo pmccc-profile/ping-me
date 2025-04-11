@@ -18,7 +18,7 @@ const formControl = document.querySelectorAll(".form-control");
 const buttonSubmit = document.querySelector(".btn-submit");
 
 //Resize event
-window.addEventListener("resize",function(){
+window.addEventListener("resize",function(event){
     //Checks the screen size
     if (window.innerWidth > 1013) {
         aside.style.display = "block";
@@ -30,6 +30,7 @@ window.addEventListener("resize",function(){
         if(buttonDropdown.classList.contains("btn-pressup")){
             buttonDropdown.innerHTML = "&#x25B2; Press Me";
             aside.style.display = "block";
+            event.preventDefault();
         }else{
             buttonDropdown.classList.add("btn-pressdown");
             buttonDropdown.classList.remove("btn-pressup");
@@ -73,11 +74,6 @@ buttonDropdown.addEventListener("click", function (event) {
         aside.style.display = "none";        
     }
     
-});
-
-//touchstart event
-buttonDropdown.addEventListener("touchstart", function (event) {   
-    event.preventDefault();   
 });
 
 //Loop through each button
