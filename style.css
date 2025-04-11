@@ -290,7 +290,7 @@ body{
     border-top: 3px solid #592720;  
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
     #navbar ul{
         flex-direction: column;
         text-align: center;
@@ -308,7 +308,15 @@ body{
 }
 
 @media only screen and (max-width: 720px) {
+    body{
+        margin: 0;
+        max-width: 100%;
+    }
+    #sect-coffee h2{
+        padding: 30px 15px 30px 15px;
+    }
     #sect-coffee > div{
+        padding: 0 30px 0 30px;
         flex-direction: column;
         gap: 20px;
     }
@@ -321,6 +329,9 @@ body{
     }
     .modal-refill-details{
         max-width: 50%;
+    }
+    #sect-contact h2{
+        padding: 30px 15px 30px 15px;
     }
 }
 
