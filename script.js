@@ -75,6 +75,11 @@ buttonDropdown.addEventListener("click", function (event) {
     
 });
 
+//touchstart event
+buttonDropdown.addEventListener("touchstart", function (event) {   
+    event.preventDefault();   
+});
+
 //Loop through each button
 buttonRefill.forEach(function(btnRefill){
     //Click event
