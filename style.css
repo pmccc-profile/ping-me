@@ -312,6 +312,9 @@ body{
         margin: 0;
         max-width: 100%;
     }
+    #navbar li a{
+        font-size: 20px;
+    }
     #sect-coffee h2{
         padding: 30px 15px 30px 15px;
     }
