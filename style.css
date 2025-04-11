@@ -290,7 +290,7 @@ body{
     border-top: 3px solid #592720;  
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 350px) {
     #navbar ul{
         flex-direction: column;
         text-align: center;
@@ -311,10 +311,6 @@ body{
     body{
         margin: 0;
         max-width: 100%;
-    }
-    #navbar ul{
-        flex-direction: row;
-        text-align: center;
     }
     #sect-coffee h2{
         padding: 30px 15px 30px 15px;
