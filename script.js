@@ -28,8 +28,12 @@ window.addEventListener("resize",function(){
     }else{
         //aside.style.display = "none"; 
         if(buttonDropdown.classList.contains("btn-pressup")){
+            buttonDropdown.innerHTML = "&#x25B2; Press Me";
             aside.style.display = "block";
         }else{
+            buttonDropdown.classList.add("btn-pressdown");
+            buttonDropdown.classList.remove("btn-pressup");
+            buttonDropdown.innerHTML = "&#x25B6; Press Me";
             aside.style.display = "none"; 
         }
     }
