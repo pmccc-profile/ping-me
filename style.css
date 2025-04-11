@@ -312,6 +312,10 @@ body{
         margin: 0;
         max-width: 100%;
     }
+    #navbar ul{
+        flex-direction: row;
+        text-align: center;
+    }
     #sect-coffee h2{
         padding: 30px 15px 30px 15px;
     }
