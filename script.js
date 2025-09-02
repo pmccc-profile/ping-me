@@ -79,13 +79,13 @@ buttonDropdown.addEventListener("click", function (event) {
 //Loop through each button
 buttonRefill.forEach(function(btnRefill){
     //Click event
-    btnRefill.addEventListener("click", function (event){   
+    btnRefill.addEventListener("click", function (){   
         modalRefillContainer.style.display = "block";                           
     });
 });
 
 //Click event
-spanClose.addEventListener("click", function (event){   
+modalRefillContainer.addEventListener("click", function (){   
     modalRefillContainer.style.display = "none";                           
 });
 

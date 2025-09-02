@@ -191,47 +191,37 @@ body{
     left: 0;
     bottom: 0;
     right: 0;
-    padding-top: 325px;
     z-index: 1;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     position: fixed;
     display: none;
 }
 .modal-refill-details{
-    margin: auto;
-    max-width: 30%;
-    background-color: #e5e4e2;
-    border: 3px solid #592720;
-    border-radius: 30px;
-}
-.modal-refill-details h2{
-    margin: 0;
-    font-size: 35px;
+    position: relative;
     text-align: center;
-    clear: both;
+    animation: pop-out 0.5s ease-out forwards;
 }
-.modal-refill-details p{
-    padding: 5px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: white;
-    background-color: #592720;
-    text-align: center;
+.modal-refill-details img{
+    object-fit: contain;
+    max-width: 100vw;
+    max-height: 100vh;
 }
-.modal-refill-details h4{
-    font-size: 17px;
-    text-align: center;
-}
-.modal-refill-details span{
-    padding: 0 25px 0 25px;
-    font-size: 50px;
-    font-weight: bold;
-    float: right;
-    cursor: pointer;
-}
-.modal-refill-details span:hover{
-    color: #d2691e;
-    text-shadow: 1px 1px #7b3f00;    
+@keyframes pop-out{
+    0%{
+        /*shrink & invisible*/
+        transform: scale(0.5); 
+        opacity: 0;
+    }
+    80%{
+        /*enlarge and slightly visible*/
+        transform: scale(1.05);
+        opacity: 0.5;
+    }
+    100%{
+        /*normal and fully visible*/
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 #sect-contact{
@@ -290,22 +280,17 @@ body{
     border-top: 3px solid #592720;  
 }
 
-@media only screen and (max-width: 450px) {
-    /*
-    #navbar ul{
-        flex-direction: column;
-        text-align: center;
+
+@media only screen and (min-height: 725px) {
+    .modal-refill-details{
+        padding-block: 2vh;
     }
-    */
+}
+
+@media only screen and (max-width: 450px) {
     #navbar li a{
         padding: 0;
         flex: 1;
-    }
-    .modal-refill-container{
-        padding-top: 180px;
-    }
-    .modal-refill-details{
-        min-width: 80%;
     }
 }
 
@@ -334,9 +319,6 @@ body{
     .flex-coffee-img > img {
         width: 100%;
         height: 250px;
-    }
-    .modal-refill-details{
-        max-width: 50%;
     }
     #sect-contact h2{
         padding: 30px 15px 30px 15px;
@@ -367,10 +349,6 @@ body{
     #section{
         flex-basis: 100%;
     }
-    .modal-refill-details{
-        margin: auto;
-        max-width: 50%;
-    }
 }
 
 @media only screen and (min-width: 2000px){
@@ -378,8 +356,12 @@ body{
         display: block;
     }
     .modal-refill-details{
-        margin: auto;
-        max-width: 10%;
+        padding-block: 0;
+    }
+    .modal-refill-details img{
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
     }
 }
 
@@ -404,7 +386,10 @@ body{
         justify-content: center;
     }
     .modal-refill-details{
-        margin: auto;
-        max-width: 10%;
+        padding-block: 5vh;
+    }
+    .modal-refill-details img{
+        max-width: 80vw;
+        max-height: 80vh;
     }
 }
