@@ -281,9 +281,18 @@ body{
 }
 
 
-@media only screen and (min-height: 725px) {
+@media only screen and (max-height: 600px) {
     .modal-refill-details{
-        padding-block: 2vh;
+        padding-block: 5vh;
+    }
+    .modal-refill-details img{
+        max-height: 70vh;
+    }
+}
+
+@media only screen and (min-height: 650px) {
+    .modal-refill-details{
+        padding-block: 5vh;
     }
 }
 
@@ -382,3 +391,4 @@ body{
         max-height: 50vh;
     }
 }
+
